@@ -8,9 +8,8 @@ import org.springframework.context.annotation.Configuration;
 @Slf4j
 @Data
 @Configuration
-//@ConfigurationProperties("example")
 public class VaultConfig {
 
-    @Value("${mysecretkey}")
-    private String mysecretkey;
+    @Value("${firstkey}")
+    private String firstkey;
 }
