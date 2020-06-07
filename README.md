@@ -1,19 +1,12 @@
 ## Spring Boot and Hashicorp Vault
 This Spring Boot Application demonstrates integration with Hashicorp Vault.
-The application read properties from Vault nothing more.
-
-### Inspiration
-I got inspiration from this resources:
-* https://www.youtube.com/watch?v=MaTDiKp_IrA
-* https://spring.io/guides/gs/accessing-vault/
-* https://docs.spring.io/spring-vault/docs/current/reference/html
-* https://spring.io/guides/gs/vault-config/
+The application read properties from Vault and nothing more at this point.
 
 ### How to get started
 * [Download Hashicorp Vault](https://www.vaultproject.io/downloads)
 * [Install Vault](https://learn.hashicorp.com/vault/getting-started/install)
 * Start Vault `vault server -dev -dev-root-token-id=12345` (Note! Not for production)
-* Open address `http://localhost:8080` and login with token `12345`
+* Open address `http://localhost:8200` and login with token `12345`
 * Click Secrets Engine `secret/`
 * Create secret `application` and add key `mysecretkey` and a value
 * Create secret `another-secret` and add key `mysecretkey` once more but this time give it another value
@@ -30,4 +23,11 @@ When the application starts log should display something like this
 ### Files to inspect and play with
 * bootstrap.yml
 * VaultConfig.java
-* SpringVaultApplication.java 
+* SpringVaultApplication.java
+
+### Inspiration
+I got inspiration from this resources:
+* https://www.youtube.com/watch?v=MaTDiKp_IrA
+* https://spring.io/guides/gs/accessing-vault/
+* https://docs.spring.io/spring-vault/docs/current/reference/html
+* https://spring.io/guides/gs/vault-config/ 
